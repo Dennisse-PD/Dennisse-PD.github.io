@@ -1,0 +1,74 @@
+/*
+	Dennisse Pagan Davila - Portfolio [Games Page]
+
+	Template used: Escape Velocity by HTML5 UP(lunzyde version)
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+	/* Image banner setup */	
+	#header { background: url("../../media/images/banner_birdwatch.png") center center; background-repeat: no-repeat; background-size: cover; }
+
+	/* Video banner setup */
+	video.banner { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; min-width: auto; height: auto; min-height: auto; background-size: cover; }
+
+	/* Banner properties */
+	#header:before { background: rgba(0, 0, 0, 0.5); } #header:before, #nav, #logo { z-index: 0; }
+	#nav ul { background: rgba(0,0,0,0.8); } #logo > a.image > img { filter: invert(1.0); }
+
+	/* Banner properties when the Video Banner should be displayed */
+	@media screen and (max-width: 2579px) and (min-width: 981px) { #header:before, #nav, #logo { z-index: 1;} }
+
+	/* Logo scaling up to 4k */
+	@media screen and (min-width: 1681px) { #logo { padding-bottom: 2em;} }
+	@media screen and (max-width: 1680px) and (min-width: 1281px) { #logo { width: 32.5em; padding-bottom: 1.75em; } }
+	@media screen and (max-width: 1280px) and (min-width: 981px) { #logo { width: 32.5em; padding-bottom: 1.5em; } }
+	@media screen and (max-width: 980px) { #logo { width: 50%; } }
+	@media screen and (max-width: 736px) { #logo { width: 60%; } }
+	@media screen and (max-width: 580px) { #logo { width: 75%; } }
+	@media screen and (max-width: 440px) { #logo { width: 90%; } }
+
+	/* Video banner fill scaling up to 4k */
+	@media screen and (max-width: 2580px) and (min-width: 2380px) { video.banner { top: -195%; } }
+	@media screen and (max-width: 2380px) and (min-width: 2180px) { video.banner { top: -175%; } }
+	@media screen and (max-width: 2180px) and (min-width: 1980px) { video.banner { top: -165%; } }
+	@media screen and (max-width: 1980px) and (min-width: 1680px) { video.banner { top: -135%; } }
+	@media screen and (max-width: 1680px) and (min-width: 1480px) { video.banner { top: -130%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1280px) { video.banner { top: -110%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1080px) { video.banner { top: -105%; } }
+	@media screen and (max-width: 1080px) and (min-width: 980px) { video.banner { top: -85%; } }
+
+	/* If bigger than 4k or using in mobile, go back to image banner */
+	@media (min-width: 2580px) { video.banner { display: none; } }
+	@media (max-width: 980px) { video.banner { display: none; } }
+
+	/* Page colors */
+
+		/* Headers */
+		.feature-list h3 { color: #a3cd55 !important; }
+		#highlights .highlight h3 { color: #a3cd55; }
+		.text-cfeat { color: #a3cd55 !important; }
+
+		/* Buttons */
+		.button { background: #444; }
+		input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .button:hover { background-color: #a0ca60; }
+		
+		input[type="button"].style1, input[type="submit"].style1, input[type="reset"].style1,
+		button.style1, .button.style1 { background: #7ead35 url("images/overlay.png"); color: #fff; }
+			input[type="button"].style1:hover, input[type="submit"].style1:hover, input[type="reset"].style1:hover,
+			button.style1:hover, .button.style1:hover { background-color: #a0ca60;}
+			input[type="button"].style1:active, input[type="submit"].style1:active, input[type="reset"].style1:active,
+			button.style1:active, .button.style1:active { background-color: #759545; }
+
+		input[type="button"].style2, input[type="submit"].style2, input[type="reset"].style2,
+		button.style2, .button.style2 { background: none; color: #676767; box-shadow: inset 0px 0px 2px 0px #a5a7a0; }
+			input[type="button"].style2:hover, input[type="submit"].style2:hover, input[type="reset"].style2:hover,
+			button.style2:hover, .button.style2:hover { box-shadow: inset 0px 0px 2px 0px #656760; }
+			input[type="button"].style2:active, input[type="submit"].style2:active, input[type="reset"].style2:active,
+			button.style2:active, .button.style2:active { box-shadow: inset 0px 0px 2px 0px #252720; }
+
+		input[type="button"].style3, input[type="submit"].style3, input[type="reset"].style3,
+		button.style3, .button.style3 { background: #000000 url("images/overlay.png"); color: #fff; }
+			input[type="button"].style3:hover, input[type="submit"].style3:hover, input[type="reset"].style3:hover,
+			button.style3:hover, .button.style3:hover { background-color: #4b5540; }
+			input[type="button"].style3:active, input[type="submit"].style3:active, input[type="reset"].style3:active,
+			button.style3:active, .button.style3:active { background-color: #272b1f; }
